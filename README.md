@@ -68,14 +68,6 @@ This project is a simple web application that demonstrates how to manage users u
 ### Viewing Users
 - The users are displayed in a list on the homepage, which updates dynamically when a new user is added.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contribution
-
-Feel free to fork this repository and submit pull requests to contribute to the project. Suggestions and improvements are always welcome!
-
 ---
 
 ### Author
