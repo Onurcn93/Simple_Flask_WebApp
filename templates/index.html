@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask User App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the User App</h1>
+
+    <!-- Form for adding a user -->
+    <label for="username">Enter Username: </label>
+    <input type="text" id="username" name="username">
+    <button id="save-user-btn">Save User</button>
+
+    <h2>Users List</h2>
+    <ul id="user-list">
+        {% for user in users %}
+        <li>ID: {{ user.id }}, Username: {{ user.username }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Display messages -->
+    <div id="message"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
